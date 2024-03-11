@@ -1,0 +1,21 @@
+* {
+    -webkit-print-color-adjust: exact !important; /*Make sure the background image is printed even if the user has not selected that option.*/
+}
+
+.print-hide {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.print-show {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.test {
+    background-color: yellow;
+}
+
+#Retain {
+    border: 1px solid darkorange !important;
+}

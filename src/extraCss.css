@@ -1,0 +1,12 @@
+thead {
+    display: table-row-group !important; /*Hide the <thead> element starting from the second page."*/
+}
+
+tfoot {
+    display: table-row-group !important; /*Hide the <tfoot> element starting from the second page."*/
+}
+
+.test {
+    background-color: deeppink;
+}
+

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <link type="image/x-icon" rel="shortcut icon" href="images/print.ico">
+    <title>jquery.PrintArea Demo</title>
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="Bootstrap-v5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/print.css" media="print" /><!--Make changes to certain styles specifically for printing."-->
+    <script src="jQuery-v3.7.1/jquery.min.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="Bootstrap-v5.3.3/js/bootstrap.min.js"></script>
+    <script src="jquery.PrintArea.js"></script>
+</head>
+<body>
+    <div class="border border-primary mx-3 my-3 p-3 float-start">
+        <div class="text-center">
+            <h5>Contains content that I want to print</h5>
+            This is just a sample page to demonstrate this plugin.
+        </div>
+
+        <div id="Retain"
+             class="PrintArea area1 all mt-2 border border-primary">
+            <div class="bg-primary text-white text-center">Print Area 1</div>
+            <span style="color: #000777;">print me</span>
+
+            <!--Modify the background style for printing.-->
+            <span class="test">test css change</span>
+
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                checkbox
+            </label>
+            <input name="chkTest1" value="1" type="checkbox">
+            <input name="chkTest2" value="2" type="checkbox">
+            <br>
+
+            <input class="form-check-input" type="radio" name="rdoTest3" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+                radio
+            </label>
+            <input value="3" name="rdoTest3" type="radio">
+            <input value="4" name="rdoTest3" type="radio">
+            <br>
+            <input value="" name="textTest4" type="text">
+            <input value="" name="textTest5" type="text">
+            <br>
+            <select name="selTest6">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <select name="selTest7" multiple="">
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+            </select>
+            <br>
+
+            <!--Only hide it when you're printing. (.print-hide)-->
+            <div class="border border-danger mx-3 my-3 p-3 print-hide">
+                I don't want this content to be included in the print. (by using CSS)
+            </div>
+
+            <!--Only show it when you're printing. (.print-show)-->
+            <div class="border border-success mx-3 my-3 p-3 print-show"
+                 style="display:none;">
+                I want this content to be visible when printed but hidden in the browser. (by using CSS)
+            </div>
+
+            <textarea name="textareaTest8"></textarea>
+            <br>
+            <img src="images/FoesEnd.jpg" id="img2" alt="test" width="200">
+        </div>
+
+        <!--Not within the scope of the jQuery selector-->
+        <div class="border border-danger my-3 p-3">
+            I don't want this content to be included in the print.
+        </div>
+
+        <div class="border border-primary PrintArea area2 all">
+            <div class="bg-primary text-white text-center">Print Area 2</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer</td>
+                        <td>Footer</td>
+                        <td>Footer</td>
+                        <td>Footer</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!--The content of the popup modal.-->
+    <div class="modal" id="modalArea3" tabindex="-1" aria-labelledby="modalArea3"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content printPaddingZero">
+                <div class="modal-header">
+                    <h5 class="modal-title">Print Modal Contents</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body PrintArea area3 all">
+                    <p>This is Print Area 3.</p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <p>This content should appear at the bottom after you scroll.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--The print settings.-->
+    <div class="my-3 float-start SettingsBox">
+        <div>
+            <div class="buttonBar mb-3">
+                <div class="btn btn-success toggleModal">open modal to show Area 3</div>
+                <div id="div_Print"
+                     class="btn btn-danger button">
+                    Print
+                </div>
+            </div>
+
+            <div class="bg-primary text-white fw-bold border border-primary rounded-top text-center">Settings</div>
+            <div class="border border-primary rounded-bottom px-3">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="fw-bold mt-3">Mode:</label>
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-auto">
+                                        <input id="popup"
+                                               type="radio"
+                                               class="form-check-input"
+                                               value="popup"
+                                               name="mode">
+                                        <label class="form-check-label"
+                                               for="popup">
+                                            Popup
+                                        </label>
+                                    </div>
+
+                                    <div id="div_closePop"
+                                         class="col-auto">
+                                        <input id="closePop"
+                                               type="checkbox"
+                                               class="form-check-input"
+                                               value=""
+                                               name="popup">
+                                        <label class="form-check-label"
+                                               for="closePop">
+                                            Close popup
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-auto">
+                                        <input id="NewTab"
+                                               type="radio"
+                                               class="form-check-input"
+                                               value="newtab"
+                                               name="mode">
+                                        <label class="form-check-label"
+                                               for="NewTab">
+                                            New Tab
+                                        </label>
+                                    </div>
+
+                                    <div id="div_closeNewTab"
+                                         class="col-auto">
+                                        <input id="closeNewTab"
+                                               type="checkbox"
+                                               class="form-check-input"
+                                               value=""
+                                               name="popup">
+                                        <label class="form-check-label"
+                                               for="closeNewTab">
+                                            Close new tab
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="iFrame"
+                                       type="radio"
+                                       class="form-check-input"
+                                       value="iframe"
+                                       name="mode">
+                                <label class="form-check-label"
+                                       for="iFrame">
+                                    IFrame
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="fw-bold mt-3">Extra css:</label>
+                                <input type="text"
+                                       name="extraCss"
+                                       class="form-control"
+                                       size="50"
+                                       placeholder="file path of css file (e.g. src/print.css, src/extraCss.css)" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="settingName fw-bold mt-3">Print area:</div>
+                                <div class="settingVals">
+                                    <div class="row g-3">
+                                        <div class="col-auto">
+                                            <input id="area1"
+                                                   class="form-check-input selPA"
+                                                   type="checkbox"
+                                                   value="area1">
+                                            <label class="form-check-label"
+                                                   for="area1">
+                                                Area 1
+                                            </label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input id="area2"
+                                                   class="form-check-input selPA"
+                                                   type="checkbox"
+                                                   value="area2">
+                                            <label class="form-check-label"
+                                                   for="area2">
+                                                Area 2
+                                            </label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input id="area3"
+                                                   class="form-check-input selPA"
+                                                   type="checkbox"
+                                                   value="area3">
+                                            <label class="form-check-label"
+                                                   for="area3">
+                                                Area 3
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="settingName mt-3">
+                                    <span class="fw-bold">Retain Attributes:</span>
+                                    <span class="fs-6 text-secondary">Affect only the container, excluding its content. (area1、area2、area3)</span>
+                                </div>
+                                <div class="settingVals">
+                                    <div class="row g-3">
+                                        <div class="col-auto">
+                                            <input class="form-check-input chkAttr"
+                                                   name="retainCss"
+                                                   type="checkbox"
+                                                   value="class">
+                                            <label class="form-check-label">
+                                                Class
+                                            </label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input class="form-check-input chkAttr"
+                                                   name="retainCss"
+                                                   type="checkbox"
+                                                   value="id">
+                                            <label class="form-check-label">
+                                                ID
+                                            </label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input class="form-check-input chkAttr"
+                                                   name="retainCss"
+                                                   type="checkbox"
+                                                   value="style">
+                                            <label class="form-check-label">
+                                                Style
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="mt-3">
+                                    <div class="settingName fw-bold mt-3">
+                                        Add to head :
+                                        <input id="addElements"
+                                               class="form-check-input chkAttr"
+                                               name="retainCss"
+                                               type="checkbox">
+                                        <label class="form-check-label ml-1"></label>
+                                    </div>
+                                    <pre id="addHead"
+                                         class="border border-dark-subtle rounded p-3">&lt;meta charset="utf-8" /&gt;<br>&lt;http-equiv="X-UA-Compatible" content="IE=edge"/&gt;</pre>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".toggleModal").click(function () {
+            $("#modalArea3").modal('show');
+        });
+
+        $("#div_Print").click(function () {
+            var mode = $("input[name='mode']:checked").val();
+            var closePopup = mode == "popup" && $("input#closePop").is(":checked");
+            var closeNewTab = mode == "newtab" && $("input#closeNewTab").is(":checked");
+            var extraCss = $("input[name='extraCss']").val();
+
+            var print = "";
+            $("input.selPA:checked").each(function () {
+                print += `${(print.length > 0 ? "," : "")}div.PrintArea.${$(this).val()}`;
+            });
+
+            var keepAttr = [];
+            $(".chkAttr").each(function () {
+                if ($(this).is(":checked") == false)
+                    return;
+
+                keepAttr.push($(this).val());
+            });
+
+            var headElements = $("input#addElements").is(":checked") ? $("#addHead").html().replace(/&lt;/g, '<').replace(/&gt;/g, '>') : '';
+
+            var options = {
+                mode: mode,
+                popClose: closePopup,
+                tabClose: closeNewTab,
+                extraCss: extraCss,
+                retainAttr: keepAttr,
+                extraHead: headElements,
+                popHt: 500,
+                popWd: 700,
+            };
+
+            console.log(print);
+            $(print).printArea(options);
+        });
+
+        $("input[name='mode']").click(function () {
+            let isPopup = $(this).val() == "popup";
+            let isNewTab = $(this).val() == "newtab";
+            $("#closePop").prop("checked", isPopup);
+            $("#closeNewTab").prop("checked", isNewTab);
+
+            isPopup ? $("#div_closePop").show() : $("#div_closePop").hide();
+            isNewTab ? $("#div_closeNewTab").show() : $("#div_closeNewTab").hide();
+        });
+
+        $(function () {
+            initSetting();
+        });
+
+        /**Set the default print configuration.*/
+        function initSetting() {
+            $("#iFrame").click();
+            $(".selPA").prop("checked", true);
+            $(".chkAttr").prop("checked", true);
+            $("#addElements").prop("checked", true);
+        }
+    </script>
+</body>
+</html>
