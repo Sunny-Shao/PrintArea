@@ -34,8 +34,8 @@ Override the jQuery plugin written by Chris Ritschard.
  */
 ```
 ## 2. Demo
-*[Demo page](https://sunnyshao-print.netlify.app/index.html){:target="_blank"}* showcasing my plugin override and providing instructions on how to use it.
+*[Demo page](https://sunnyshao-print.netlify.app/index.html)* showcasing my plugin override and providing instructions on how to use it.
 
 ## 3. Reference
-- *[PrintArea (by Chris Ritschard)](https://plugins.jquery.com/PrintArea){:target="_blank"}*
-- *[Demo Page (by Chris Ritschard)](https://www.jqueryscript.net/demo/Print-Specified-Area-Of-A-Page-PrintArea/demo/){:target="_blank"}*
+- *[PrintArea (by Chris Ritschard)](https://plugins.jquery.com/PrintArea)*
+- *[Demo Page (by Chris Ritschard)](https://www.jqueryscript.net/demo/Print-Specified-Area-Of-A-Page-PrintArea/demo/)*
