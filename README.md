@@ -3,7 +3,7 @@
 
 Override the jQuery plugin written by Chris Ritschard.
 
-#### 1. Usage
+## 1. Usage
 ``` js {.line-numbers}
 /**
  *  Tested in Edge 122.0.2365.80, Safari 17.3, Firefox 123.0.1 and Chrome 122.0.6261.112
@@ -33,9 +33,9 @@ Override the jQuery plugin written by Chris Ritschard.
  *  @extraHead  | [string]   | ('')                   | comma separated list of extra elements to be appended to the head tag
  */
 ```
-#### 2. Demo
-*[Demo page](https://sunnyshao-print.netlify.app/index.html)* showcasing my plugin override and providing instructions on how to use it.
+## 2. Demo
+*[Demo page](https://sunnyshao-print.netlify.app/index.html){:target="_blank"}* showcasing my plugin override and providing instructions on how to use it.
 
-#### 3. Reference
-- *[PrintArea (by Chris Ritschard)](https://plugins.jquery.com/PrintArea)*
-- *[Demo Page (by Chris Ritschard)](https://www.jqueryscript.net/demo/Print-Specified-Area-Of-A-Page-PrintArea/demo/)*
+## 3. Reference
+- *[PrintArea (by Chris Ritschard)](https://plugins.jquery.com/PrintArea){:target="_blank"}*
+- *[Demo Page (by Chris Ritschard)](https://www.jqueryscript.net/demo/Print-Specified-Area-Of-A-Page-PrintArea/demo/){:target="_blank"}*
