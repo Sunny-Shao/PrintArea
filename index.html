@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="zh">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
@@ -8,12 +9,25 @@
     <title>jquery.PrintArea Demo</title>
     <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.min.css" />
     <link rel="stylesheet" href="Bootstrap-v5.3.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="src/print.css" media="print" /><!--Make changes to certain styles specifically for printing."-->
+
+    <!--Make changes to certain styles specifically for printing."-->
+    <link rel="stylesheet" href="src/print.css" media="print" />
+
     <script src="jQuery-v3.7.1/jquery.min.js"></script>
     <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
     <script src="Bootstrap-v5.3.3/js/bootstrap.min.js"></script>
     <script src="jquery.PrintArea.js"></script>
+
+    <!--Microsogt Clarity"-->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "lfa1cem07p");
+    </script>
 </head>
+
 <body>
     <div class="border border-primary mx-3 my-3 p-3 float-start">
         <div class="text-center">
@@ -21,8 +35,7 @@
             This is just a sample page to demonstrate this plugin.
         </div>
 
-        <div id="Retain"
-             class="PrintArea area1 all mt-2 border border-primary">
+        <div id="Retain" class="PrintArea area1 all mt-2 border border-primary">
             <div class="bg-primary text-white text-center">Print Area 1</div>
             <span style="color: #000777;">print me</span>
 
@@ -66,8 +79,7 @@
             </div>
 
             <!--Only show it when you're printing. (.print-show)-->
-            <div class="border border-success mx-3 my-3 p-3 print-show"
-                 style="display:none;">
+            <div class="border border-success mx-3 my-3 p-3 print-show" style="display:none;">
                 I want this content to be visible when printed but hidden in the browser. (by using CSS)
             </div>
 
@@ -215,8 +227,7 @@
     </div>
 
     <!--The content of the popup modal.-->
-    <div class="modal" id="modalArea3" tabindex="-1" aria-labelledby="modalArea3"
-         aria-hidden="true">
+    <div class="modal" id="modalArea3" tabindex="-1" aria-labelledby="modalArea3" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content printPaddingZero">
                 <div class="modal-header">
@@ -237,8 +248,7 @@
         <div>
             <div class="buttonBar mb-3">
                 <div class="btn btn-success toggleModal">open modal to show Area 3</div>
-                <div id="div_Print"
-                     class="btn btn-danger button">
+                <div id="div_Print" class="btn btn-danger button">
                     Print
                 </div>
             </div>
@@ -252,26 +262,17 @@
                                 <label class="fw-bold mt-3">Mode:</label>
                                 <div class="row g-3 align-items-center">
                                     <div class="col-auto">
-                                        <input id="popup"
-                                               type="radio"
-                                               class="form-check-input"
-                                               value="popup"
-                                               name="mode">
-                                        <label class="form-check-label"
-                                               for="popup">
+                                        <input id="popup" type="radio" class="form-check-input" value="popup"
+                                            name="mode">
+                                        <label class="form-check-label" for="popup">
                                             Popup
                                         </label>
                                     </div>
 
-                                    <div id="div_closePop"
-                                         class="col-auto">
-                                        <input id="closePop"
-                                               type="checkbox"
-                                               class="form-check-input"
-                                               value=""
-                                               name="popup">
-                                        <label class="form-check-label"
-                                               for="closePop">
+                                    <div id="div_closePop" class="col-auto">
+                                        <input id="closePop" type="checkbox" class="form-check-input" value=""
+                                            name="popup">
+                                        <label class="form-check-label" for="closePop">
                                             Close popup
                                         </label>
                                     </div>
@@ -282,26 +283,17 @@
                             <td>
                                 <div class="row g-3 align-items-center">
                                     <div class="col-auto">
-                                        <input id="NewTab"
-                                               type="radio"
-                                               class="form-check-input"
-                                               value="newtab"
-                                               name="mode">
-                                        <label class="form-check-label"
-                                               for="NewTab">
+                                        <input id="NewTab" type="radio" class="form-check-input" value="newtab"
+                                            name="mode">
+                                        <label class="form-check-label" for="NewTab">
                                             New Tab
                                         </label>
                                     </div>
 
-                                    <div id="div_closeNewTab"
-                                         class="col-auto">
-                                        <input id="closeNewTab"
-                                               type="checkbox"
-                                               class="form-check-input"
-                                               value=""
-                                               name="popup">
-                                        <label class="form-check-label"
-                                               for="closeNewTab">
+                                    <div id="div_closeNewTab" class="col-auto">
+                                        <input id="closeNewTab" type="checkbox" class="form-check-input" value=""
+                                            name="popup">
+                                        <label class="form-check-label" for="closeNewTab">
                                             Close new tab
                                         </label>
                                     </div>
@@ -310,13 +302,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <input id="iFrame"
-                                       type="radio"
-                                       class="form-check-input"
-                                       value="iframe"
-                                       name="mode">
-                                <label class="form-check-label"
-                                       for="iFrame">
+                                <input id="iFrame" type="radio" class="form-check-input" value="iframe" name="mode">
+                                <label class="form-check-label" for="iFrame">
                                     IFrame
                                 </label>
                             </td>
@@ -324,11 +311,8 @@
                         <tr>
                             <td>
                                 <label class="fw-bold mt-3">Extra css:</label>
-                                <input type="text"
-                                       name="extraCss"
-                                       class="form-control"
-                                       size="50"
-                                       placeholder="file path of css file (e.g. src/print.css, src/extraCss.css)" />
+                                <input type="text" name="extraCss" class="form-control" size="50"
+                                    placeholder="file path of css file (e.g. src/print.css, src/extraCss.css)" />
                             </td>
                         </tr>
                         <tr>
@@ -337,32 +321,23 @@
                                 <div class="settingVals">
                                     <div class="row g-3">
                                         <div class="col-auto">
-                                            <input id="area1"
-                                                   class="form-check-input selPA"
-                                                   type="checkbox"
-                                                   value="area1">
-                                            <label class="form-check-label"
-                                                   for="area1">
+                                            <input id="area1" class="form-check-input selPA" type="checkbox"
+                                                value="area1">
+                                            <label class="form-check-label" for="area1">
                                                 Area 1
                                             </label>
                                         </div>
                                         <div class="col-auto">
-                                            <input id="area2"
-                                                   class="form-check-input selPA"
-                                                   type="checkbox"
-                                                   value="area2">
-                                            <label class="form-check-label"
-                                                   for="area2">
+                                            <input id="area2" class="form-check-input selPA" type="checkbox"
+                                                value="area2">
+                                            <label class="form-check-label" for="area2">
                                                 Area 2
                                             </label>
                                         </div>
                                         <div class="col-auto">
-                                            <input id="area3"
-                                                   class="form-check-input selPA"
-                                                   type="checkbox"
-                                                   value="area3">
-                                            <label class="form-check-label"
-                                                   for="area3">
+                                            <input id="area3" class="form-check-input selPA" type="checkbox"
+                                                value="area3">
+                                            <label class="form-check-label" for="area3">
                                                 Area 3
                                             </label>
                                         </div>
@@ -374,33 +349,28 @@
                             <td>
                                 <div class="settingName mt-3">
                                     <span class="fw-bold">Retain Attributes:</span>
-                                    <span class="fs-6 text-secondary">Affect only the container, excluding its content. (area1、area2、area3)</span>
+                                    <span class="fs-6 text-secondary">Affect only the container, excluding its content.
+                                        (area1、area2、area3)</span>
                                 </div>
                                 <div class="settingVals">
                                     <div class="row g-3">
                                         <div class="col-auto">
-                                            <input class="form-check-input chkAttr"
-                                                   name="retainCss"
-                                                   type="checkbox"
-                                                   value="class">
+                                            <input class="form-check-input chkAttr" name="retainCss" type="checkbox"
+                                                value="class">
                                             <label class="form-check-label">
                                                 Class
                                             </label>
                                         </div>
                                         <div class="col-auto">
-                                            <input class="form-check-input chkAttr"
-                                                   name="retainCss"
-                                                   type="checkbox"
-                                                   value="id">
+                                            <input class="form-check-input chkAttr" name="retainCss" type="checkbox"
+                                                value="id">
                                             <label class="form-check-label">
                                                 ID
                                             </label>
                                         </div>
                                         <div class="col-auto">
-                                            <input class="form-check-input chkAttr"
-                                                   name="retainCss"
-                                                   type="checkbox"
-                                                   value="style">
+                                            <input class="form-check-input chkAttr" name="retainCss" type="checkbox"
+                                                value="style">
                                             <label class="form-check-label">
                                                 Style
                                             </label>
@@ -414,14 +384,12 @@
                                 <div class="mt-3">
                                     <div class="settingName fw-bold mt-3">
                                         Add to head :
-                                        <input id="addElements"
-                                               class="form-check-input chkAttr"
-                                               name="retainCss"
-                                               type="checkbox">
+                                        <input id="addElements" class="form-check-input chkAttr" name="retainCss"
+                                            type="checkbox">
                                         <label class="form-check-label ml-1"></label>
                                     </div>
                                     <pre id="addHead"
-                                         class="border border-dark-subtle rounded p-3">&lt;meta charset="utf-8" /&gt;<br>&lt;http-equiv="X-UA-Compatible" content="IE=edge"/&gt;</pre>
+                                        class="border border-dark-subtle rounded p-3">&lt;meta charset="utf-8" /&gt;<br>&lt;http-equiv="X-UA-Compatible" content="IE=edge"/&gt;</pre>
                                 </div>
                             </td>
                         </tr>
@@ -495,4 +463,5 @@
         }
     </script>
 </body>
+
 </html>
